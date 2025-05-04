@@ -2,11 +2,9 @@
 // @flow strict
 import { isValidEmail } from '@/utils/check-email';
 import emailjs from '@emailjs/browser';
-import axios from 'axios';
 import { useState } from 'react';
 import { TbMailForward } from "react-icons/tb";
 import { toast } from 'react-toastify';
-import { ImSpinner2 } from "react-icons/im";
 
 function ContactWithoutCaptcha() {
   const [error, setError] = useState({ email: false, required: false });
@@ -42,14 +40,9 @@ function ContactWithoutCaptcha() {
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
 
     try {
-      console.log(userInput.email)
-      console.log(userInput.name)
       const res = await emailjs.send(serviceID, templateID, userInput, options);
-      console.log(res.status)
-      // const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, userInput);
-      const teleRes = await axios.post('/api/contact', userInput);
-      console.log(res.status)
-      if (res.status === 200 || teleRes.status === 200) {
+    
+      if (res.status === 200) {
         toast.success('Message sent successfully!');
         setUserInput({
           name: '',

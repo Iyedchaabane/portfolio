@@ -14,7 +14,7 @@ function Footer() {
           <p className="text-sm">
             © Developer Portfolio by <Link target="_blank" href="https://www.linkedin.com/in/chaabane-iyed/" className="text-[#16f2b3]">IYED CH</Link>
           </p>
-          <div className="flex items-center gap-5">
+          {/* <div className="flex items-center gap-5">
             <Link
               target="_blank"
               href="#"
@@ -31,7 +31,7 @@ function Footer() {
               <CgGitFork />
               <span>Fork</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div >
