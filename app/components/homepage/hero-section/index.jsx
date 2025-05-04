@@ -7,10 +7,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
-import { SiLeetcode } from "react-icons/si";
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 function HeroSection() {
   return (

@@ -6,9 +6,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import experience from '/public/lottie/code.json';
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 function Experience() {
   return (

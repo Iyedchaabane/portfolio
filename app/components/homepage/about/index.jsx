@@ -2,9 +2,7 @@
 
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 function AboutSection() {
   return (

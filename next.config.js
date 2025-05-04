@@ -5,8 +5,8 @@ module.exports = {
   basePath: isProd? '/portfolio' : '',
   output: 'export',
   distDir: 'dist',
-  publicRuntimeConfig: {
-    basePath: isProd ? '/portfolio' : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/portfolio' : '',
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
