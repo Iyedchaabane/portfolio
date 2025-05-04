@@ -7,12 +7,15 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import lottieFile from '/public/lottie/study.json';
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
+const basePath = publicRuntimeConfig.basePath;
 
 function Education() {
   return (
     <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="/section.svg"
+        src="${basePath}/section.svg"
         alt="Hero"
         width={1572}
         height={795}
@@ -49,7 +52,7 @@ function Education() {
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
                     <div className="p-3 relative text-white">
                       <Image
-                        src="/blur-23.svg"
+                        src={`${basePath}/blur-23.svg`}
                         alt="Hero"
                         width={1080}
                         height={200}
