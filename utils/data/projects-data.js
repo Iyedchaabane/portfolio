@@ -3,65 +3,71 @@ import crefin from '/public/image/crefin.jpg';
 import realEstate from '/public/image/real-estate.jpg';
 import travel from '/public/image/travel.jpg';
 
+/**
+ * Portfolio Projects Data
+ * 
+ * This array contains all portfolio projects with their details.
+ * Each project should include:
+ * - id: Unique identifier
+ * - name: Project title
+ * - description: Brief overview of the project
+ * - tools: Array of technologies used
+ * - role: Your role in the project
+ * - code: GitHub repository URL (empty string if not available)
+ * - demo: Live demo URL (empty string if not available)
+ * - image: Project preview image
+ * - github: GitHub repository URL for social link (optional)
+ */
 export const projectsData = [
-    // {
-    //     id: 1,
-    //     name: 'Missions to Kopileft',
-    //     description:  `
-    //     Active participation in the various phases of development, including drafting specifications, design, coding, and validation. 
-    //     Implementation of REST APIs and the business layer in Java with Spring Boot, including the development of microservices. 
-    //     Migration of internal applications to Java 17 and integration of messaging solutions for data synchronization using JMS and ActiveMQ.
-    //     Planning and execution of functional tests with Docker and JUnit, along with the optimization of the testing process through automated test integration.
-    //     `,
-    //     tools: [
-    //       'Kotlin', 'Java', 'Python', 'TypeScript', 'Spring Boot', 'Angular', 'Exposed',
-    //       'PostgreSQL', 'Linux', 'Git', 'GitHub', 'JMS', 'ActiveMQ', 'REST API',
-    //       'Java 17', 'Java 8', 'PowerShell', 'CI/CD', 'Agile Scrum'
-    //     ],
-    //     role: 'Software engineer',
-    //     code: '',
-    //     demo: '',
-    //     image: crefin,
-    // },      
+   {
+        id: 1,
+        name: 'Book Social Network',
+        description: 'Built a full-stack social network platform for book enthusiasts enabling users to share, rate, and review books. Implemented secure authentication with JWT, email verification system, and real-time features. Created responsive UI with Angular and robust backend APIs for book management and social interactions',
+        tools: ["Java 17", "Spring Boot 3", "Angular 17", "TypeScript", "PostgreSQL", "Docker", "MailDev", "JWT", "REST API"],
+        role: 'Full Stack Developer',
+        demo: 'https://youtu.be/XEUTdd2zWk8',
+        image: '', // You'll need to add your image reference
+        github: 'https://github.com/Iyedchaabane/Book-Social-Network'
+    },
     {
         id: 2,
-        name: 'Monitoring Application for PGuard',
-        description: 'Developed a multi-robot application for real-time diagnostics, enabling continuous monitoring of robot states. Generated detailed reports and maintained historical logs for analysis. Improved system performance and supported data-driven decision-making.',
-        tools: ["Java", "TypeScript", 'Angular', 'Spring Boot', "Websocket", "MongoDB",  "JSON", "REST API ", "Scrum"  ],
-        role: 'Full Stack Developer',
-        code: '',
+        name: 'Web Image Scraper',
+        description: 'Developed an automated Python tool for scraping and downloading images from dynamic websites. Implemented intelligent scrolling to handle lazy-loaded content, domain filtering capabilities, and safe image validation. Created CLI interface with customizable options for efficient dataset creation',
+        tools: ["Python", "Selenium", "BeautifulSoup", "Pandas", "Pillow", "ChromeDriver"],
+        role: 'Backend Developer',
         demo: '',
-        image: travel,
+        image: '', // You'll need to add your image reference
+        github: 'https://github.com/Iyedchaabane/Web-Image-Scraper'
     },
     {
         id: 3,
-        name: 'E-learning platform',
-        description: 'Designed and developed an interactive educational platform that converted traditional textbooks into engaging digital content and educational videos.',
-        tools: ["Java", "TypeScript", 'Angular', 'Spring Boot', "MySQL", "JUnit", "REST API "],
-        code: '',
+        name: 'Foodies - Online Food Delivery Platform',
+        description: 'Created a comprehensive food delivery system with separate customer and admin interfaces. Integrated payment gateway (Konnect), email notifications (Brevo), and cloud storage (Cloudinary). Built scalable microservices architecture with MongoDB and Redis for high-performance order processing',
+        tools: ["Java 21", "Spring Boot", "React", "TypeScript", "MongoDB", "Redis", "Docker", "TailwindCSS", "Vite", "JWT"],
         role: 'Full Stack Developer',
-        demo: 'https://abajim.com/',
-        image: realEstate,
+        demo: '',
+        image: '', // You'll need to add your image reference
+        github: 'https://github.com/Iyedchaabane/Foodies---Full-Stack-Online-Food-Delivery-System'
     },
     {
         id: 4,
-        name: 'Club and Association Management application.',
-        description: 'Developed a comprehensive web application to streamline club management and boost student engagement at the university.',
-        tools: ["Java", "TypeScript", 'Angular', 'Spring Boot', "MySQL", "JUnit", "REST API "],
-        code: '',
+        name: 'Spring Gemini AI Integration',
+        description: 'Integrated Google Gemini AI with Spring Boot using Spring AI framework to create an intelligent chatbot API. Implemented REST endpoints with Swagger documentation for easy testing. Demonstrated modern AI integration patterns in enterprise Java applications',
+        tools: ["Java 21", "Spring Boot", "Spring AI", "Google Gemini AI", "REST API", "Swagger", "Maven"],
+        role: 'Backend Developer',
         demo: '',
-        image: ayla,
-        role: 'Full Stack Developer',
+        image: '', // You'll need to add your image reference
+        github: 'https://github.com/Iyedchaabane/Spring-Gemini-AI'
     },
     {
         id: 5,
-        name: 'Bank Manager application ',
-        description: 'Built a web-based Bank Manager application to manage accounts, process transactions, and support customer service in core banking operations.',
-        tools: ["Java","JavaEE", "MySQL"],
-        code: '',
-        role: 'Backend Developer',
+        name: 'Finance Tracking Web Application',
+        description: 'Built a personal finance management system with real-time currency conversion and multi-language support (English, Arabic, French). Implemented secure transaction management, interactive data visualizations with charts, and category-based expense tracking. Features JWT authentication and soft-delete protection',
+        tools: ["Java 21", "Spring Boot", "React", "PostgreSQL", "Docker", "TailwindCSS", "Recharts", "JWT", "MapStruct", "ExchangeRate API"],
+        role: 'Full Stack Developer',
         demo: '',
-        image: '',
+        image: '', // You'll need to add your image reference
+        github: 'https://github.com/Iyedchaabane/Finance-Tracking-Web-App'
     }
 ];
 
@@ -75,7 +81,6 @@ export const projectsData = [
 //     description: "",
 //     tools: [],
 //     role: '',
-//     code: '',
 //     demo: '',
 //     image: crefin,
 // },
