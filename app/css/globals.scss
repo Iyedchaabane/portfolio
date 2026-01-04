@@ -37,3 +37,61 @@ body {
   // padding-top: calc(var(--index) * 2.5rem);
   top: calc(var(--index) * 4rem);
 }
+
+/* Modal Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Custom Scrollbar for Modal */
+/* For Webkit browsers (Chrome, Safari, newer Edge) */
+.modal-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-scrollbar::-webkit-scrollbar-track {
+  background: #0d1224;
+  border-radius: 10px;
+}
+
+.modal-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #16f2b3 0%, #8228ec 100%);
+  border-radius: 10px;
+  border: 2px solid #0d1224;
+}
+
+.modal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #1affcc 0%, #9a3fff 100%);
+}
+
+/* For Firefox */
+.modal-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #16f2b3 #0d1224;
+}
