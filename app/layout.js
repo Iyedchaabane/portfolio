@@ -11,9 +11,57 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Iyed Chaabane - Software Developer",
+  title: "Portfolio of Iyed Chaabane - Full Stack Software Engineer",
   description:
-    "This is the portfolio of Iyed Chaabane. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "Full Stack Software Engineer specializing in Java, Spring Boot, React, and Angular. Experienced in building high-availability POS solutions, microservices, and real-time monitoring systems. Available for collaboration on challenging projects.",
+  keywords: [
+    "Iyed Chaabane",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Java Developer",
+    "Spring Boot",
+    "React Developer",
+    "Angular Developer",
+    "Portfolio",
+    "Web Development",
+    "Tunisia Developer"
+  ],
+  authors: [{ name: "Iyed Chaabane" }],
+  creator: "Iyed Chaabane",
+  publisher: "Iyed Chaabane",
+  metadataBase: new URL('https://iyedchaabane.github.io/portfolio'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://iyedchaabane.github.io/portfolio',
+    title: 'Portfolio of Iyed Chaabane - Full Stack Software Engineer',
+    description: 'Full Stack Software Engineer specializing in Java, Spring Boot, React, and Angular. Experienced in building high-availability solutions.',
+    siteName: 'Iyed Chaabane Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portfolio of Iyed Chaabane - Full Stack Software Engineer',
+    description: 'Full Stack Software Engineer specializing in Java, Spring Boot, React, and Angular.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({ children }) {
