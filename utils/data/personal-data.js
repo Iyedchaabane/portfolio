@@ -12,5 +12,5 @@ export const personalData = {
   twitter: 'https://x.com/ChaabaneIyed',
   stackOverflow: 'https://stackoverflow.com/users/18111408/chaabane-iyed',
   devUsername: "IyedChaabane",
-  resume: "https://drive.google.com/file/d/1Ya6O3uCL7-5iq7F6jHoti9Qk1DQPK0SF/view?usp=sharing"
+  resume: "/documents/Iyed_Chaabane_Full_Stack_Engineer_CV.pdf"
 }
